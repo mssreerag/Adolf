@@ -1,0 +1,276 @@
+EESchema Schematic File Version 4
+LIBS:tutorial-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 5BD05A1E
+P 2000 1600
+F 0 "Q?" H 2191 1646 50  0000 L CNN
+F 1 "BC547" H 2191 1555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2200 1525 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 2000 1600 50  0001 L CNN
+	1    2000 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BD05B7E
+P 2100 2100
+F 0 "R?" H 2170 2146 50  0000 L CNN
+F 1 "R" H 2170 2055 50  0000 L CNN
+F 2 "" V 2030 2100 50  0001 C CNN
+F 3 "~" H 2100 2100 50  0001 C CNN
+	1    2100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BD05E7C
+P 1050 1600
+F 0 "C?" V 798 1600 50  0000 C CNN
+F 1 "C" V 889 1600 50  0000 C CNN
+F 2 "" H 1088 1450 50  0001 C CNN
+F 3 "~" H 1050 1600 50  0001 C CNN
+	1    1050 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 1800 2100 1900
+Connection ~ 1250 1600
+Wire Wire Line
+	1250 1600 1200 1600
+Wire Wire Line
+	1250 2600 1200 2600
+Wire Wire Line
+	900  1600 750  1600
+Connection ~ 1250 2600
+Wire Wire Line
+	1250 2600 2100 2600
+Wire Wire Line
+	2100 2250 2100 2600
+Connection ~ 2100 2600
+Wire Wire Line
+	2100 2600 2450 2600
+$Comp
+L power:Earth #PWR?
+U 1 1 5BD0717E
+P 1250 2600
+F 0 "#PWR?" H 1250 2350 50  0001 C CNN
+F 1 "Earth" H 1250 2450 50  0001 C CNN
+F 2 "" H 1250 2600 50  0001 C CNN
+F 3 "~" H 1250 2600 50  0001 C CNN
+	1    1250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BD074C9
+P 2450 2100
+F 0 "C?" H 2565 2146 50  0000 L CNN
+F 1 "C" H 2565 2055 50  0000 L CNN
+F 2 "" H 2488 1950 50  0001 C CNN
+F 3 "~" H 2450 2100 50  0001 C CNN
+	1    2450 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2000 2450 1950
+Wire Wire Line
+	2450 1900 2100 1900
+Connection ~ 2100 1900
+Wire Wire Line
+	2100 1900 2100 1950
+Connection ~ 2450 1950
+Wire Wire Line
+	2450 1950 2450 1900
+Wire Wire Line
+	2450 2250 2450 2600
+$Comp
+L Device:R R?
+U 1 1 5BD07B87
+P 1250 2100
+F 0 "R?" H 1320 2146 50  0000 L CNN
+F 1 "R" H 1320 2055 50  0000 L CNN
+F 2 "" V 1180 2100 50  0001 C CNN
+F 3 "~" H 1250 2100 50  0001 C CNN
+	1    1250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BD07BF3
+P 1250 1100
+F 0 "R?" H 1320 1146 50  0000 L CNN
+F 1 "R" H 1320 1055 50  0000 L CNN
+F 2 "" V 1180 1100 50  0001 C CNN
+F 3 "~" H 1250 1100 50  0001 C CNN
+	1    1250 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BD07DB8
+P 2100 1150
+F 0 "R?" H 2170 1196 50  0000 L CNN
+F 1 "R" H 2170 1105 50  0000 L CNN
+F 2 "" V 2030 1150 50  0001 C CNN
+F 3 "~" H 2100 1150 50  0001 C CNN
+	1    2100 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 750  2100 750 
+Wire Wire Line
+	2100 750  2100 1000
+Wire Wire Line
+	1250 950  1250 750 
+Wire Wire Line
+	1250 2600 1250 2250
+Wire Wire Line
+	1250 1600 1250 1250
+Wire Wire Line
+	1250 1600 1250 1950
+Wire Wire Line
+	2100 1300 2100 1400
+Connection ~ 2100 1400
+$Comp
+L Device:C C?
+U 1 1 5BD09949
+P 3000 1400
+F 0 "C?" V 2748 1400 50  0000 C CNN
+F 1 "C" V 2839 1400 50  0000 C CNN
+F 2 "" H 3038 1250 50  0001 C CNN
+F 3 "~" H 3000 1400 50  0001 C CNN
+	1    3000 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 1400 2850 1400
+Connection ~ 2850 1400
+Wire Wire Line
+	2100 1400 2850 1400
+Wire Wire Line
+	1250 1600 1800 1600
+Text GLabel 1650 750  1    50   Input ~ 0
+VCC
+Text GLabel 750  1600 0    50   Input ~ 0
+Input
+Text GLabel 3150 1400 2    50   Output ~ 0
+Out
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5BD84655
+P 3800 4450
+F 0 "T?" H 3800 4828 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 3800 4737 50  0000 C CNN
+F 2 "" H 3800 4450 50  0001 C CNN
+F 3 "~" H 3800 4450 50  0001 C CNN
+	1    3800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7805 U?
+U 1 1 5BD846D1
+P 4900 4250
+F 0 "U?" H 4900 4492 50  0000 C CNN
+F 1 "L7805" H 4900 4401 50  0000 C CNN
+F 2 "" H 4925 4100 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 4900 4200 50  0001 C CNN
+	1    4900 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4550 4900 4650
+Wire Wire Line
+	4900 4650 5350 4650
+Wire Wire Line
+	5200 4250 5350 4250
+$Comp
+L power:VAC #PWR?
+U 1 1 5BD861FA
+P 3400 4250
+F 0 "#PWR?" H 3400 4150 50  0001 C CNN
+F 1 "VAC" H 3400 4525 50  0000 C CNN
+F 2 "" H 3400 4250 50  0001 C CNN
+F 3 "" H 3400 4250 50  0001 C CNN
+	1    3400 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3400 4650 3300 4650
+Wire Wire Line
+	3300 4650 3300 4800
+$Comp
+L power:Earth #PWR?
+U 1 1 5BD8706C
+P 3300 4800
+F 0 "#PWR?" H 3300 4550 50  0001 C CNN
+F 1 "Earth" H 3300 4650 50  0001 C CNN
+F 2 "" H 3300 4800 50  0001 C CNN
+F 3 "~" H 3300 4800 50  0001 C CNN
+	1    3300 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 5500 4250 2    50   Input ~ 0
+OUT+
+Text GLabel 5500 4650 2    50   Input ~ 0
+OUT-
+$Comp
+L Device:C C?
+U 1 1 5BD87ACD
+P 4350 4400
+F 0 "C?" H 4465 4446 50  0000 L CNN
+F 1 ".0002mF" H 4465 4355 50  0000 L CNN
+F 2 "" H 4388 4250 50  0001 C CNN
+F 3 "~" H 4350 4400 50  0001 C CNN
+	1    4350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BD89A1E
+P 5350 4450
+F 0 "C?" H 5465 4496 50  0000 L CNN
+F 1 "C" H 5465 4405 50  0000 L CNN
+F 2 "" H 5388 4300 50  0001 C CNN
+F 3 "~" H 5350 4450 50  0001 C CNN
+	1    5350 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4650 5350 4600
+Connection ~ 5350 4650
+Wire Wire Line
+	5350 4650 5500 4650
+Wire Wire Line
+	5350 4300 5350 4250
+Connection ~ 5350 4250
+Wire Wire Line
+	5350 4250 5500 4250
+Wire Wire Line
+	4200 4650 4350 4650
+Connection ~ 4900 4650
+Wire Wire Line
+	4350 4550 4350 4650
+Connection ~ 4350 4650
+Wire Wire Line
+	4350 4650 4900 4650
+Wire Wire Line
+	4200 4250 4350 4250
+Connection ~ 4350 4250
+Wire Wire Line
+	4350 4250 4600 4250
+$EndSCHEMATC

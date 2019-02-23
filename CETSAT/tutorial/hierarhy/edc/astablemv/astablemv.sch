@@ -1,0 +1,210 @@
+EESchema Schematic File Version 4
+LIBS:astablemv-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4800 4100 4100 4100
+$Comp
+L pspice:0 #GND01
+U 1 1 5BFAB5E6
+P 4350 5150
+F 0 "#GND01" H 4350 5050 50  0001 C CNN
+F 1 "0" H 4350 5237 50  0000 C CNN
+F 2 "" H 4350 5150 50  0001 C CNN
+F 3 "" H 4350 5150 50  0001 C CNN
+	1    4350 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4850 2550 4250
+Wire Wire Line
+	2550 3650 2550 3050
+$Comp
+L pspice:QNPN Q2
+U 1 1 5BFACC28
+P 5100 4350
+F 0 "Q2" H 5327 4396 50  0000 L CNN
+F 1 "QNPN" H 5327 4305 50  0000 L CNN
+F 2 "" H 5100 4350 50  0001 C CNN
+F 3 "" H 5100 4350 50  0001 C CNN
+	1    5100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4350 4800 4100
+Wire Wire Line
+	5250 4850 5250 4700
+$Comp
+L pspice:QNPN Q1
+U 1 1 5BFAEB84
+P 3650 4350
+F 0 "Q1" H 3876 4396 50  0000 L CNN
+F 1 "QNPN" H 3876 4305 50  0000 L CNN
+F 2 "" H 3650 4350 50  0001 C CNN
+F 3 "" H 3650 4350 50  0001 C CNN
+	1    3650 4350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4850 3500 4850
+Wire Wire Line
+	3950 4350 4100 4350
+Wire Wire Line
+	3500 4700 3500 4850
+Connection ~ 3500 4850
+NoConn ~ 5000 4700
+NoConn ~ 3750 4700
+Wire Wire Line
+	3500 4850 4350 4850
+Wire Wire Line
+	4350 5150 4350 4850
+Connection ~ 4350 4850
+Wire Wire Line
+	4350 4850 5250 4850
+$Comp
+L pspice:C C1
+U 1 1 5BFC6309
+P 3800 3750
+F 0 "C1" V 3485 3750 50  0000 C CNN
+F 1 "0.01u" V 3576 3750 50  0000 C CNN
+F 2 "" H 3800 3750 50  0001 C CNN
+F 3 "" H 3800 3750 50  0001 C CNN
+	1    3800 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:C C2
+U 1 1 5BFC7560
+P 5000 3700
+F 0 "C2" V 4685 3700 50  0000 C CNN
+F 1 "0.022u" V 4776 3700 50  0000 C CNN
+F 2 "" H 5000 3700 50  0001 C CNN
+F 3 "" H 5000 3700 50  0001 C CNN
+	1    5000 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 3700 5250 4000
+Wire Wire Line
+	3550 3750 3500 3750
+Wire Wire Line
+	3500 3750 3500 4000
+Wire Wire Line
+	4050 3750 4100 3750
+Wire Wire Line
+	4100 3750 4100 4100
+Wire Wire Line
+	2550 3050 3500 3050
+$Comp
+L pspice:R R1
+U 1 1 5BFC8626
+P 3500 3300
+F 0 "R1" H 3568 3346 50  0000 L CNN
+F 1 "4.7k" H 3568 3255 50  0000 L CNN
+F 2 "" H 3500 3300 50  0001 C CNN
+F 3 "" H 3500 3300 50  0001 C CNN
+	1    3500 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 3050
+$Comp
+L pspice:R R2
+U 1 1 5BFC86E9
+P 4100 3300
+F 0 "R2" H 4168 3346 50  0000 L CNN
+F 1 "82k" H 4168 3255 50  0000 L CNN
+F 2 "" H 4100 3300 50  0001 C CNN
+F 3 "" H 4100 3300 50  0001 C CNN
+	1    4100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R3
+U 1 1 5BFC8945
+P 4750 3300
+F 0 "R3" H 4818 3346 50  0000 L CNN
+F 1 "82k" H 4818 3255 50  0000 L CNN
+F 2 "" H 4750 3300 50  0001 C CNN
+F 3 "" H 4750 3300 50  0001 C CNN
+	1    4750 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R4
+U 1 1 5BFC8D93
+P 5250 3300
+F 0 "R4" H 5318 3346 50  0000 L CNN
+F 1 "4.7k" H 5318 3255 50  0000 L CNN
+F 2 "" H 5250 3300 50  0001 C CNN
+F 3 "" H 5250 3300 50  0001 C CNN
+	1    5250 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3700 5250 3550
+Connection ~ 5250 3700
+Wire Wire Line
+	4100 3550 4100 3750
+Connection ~ 4100 3750
+Wire Wire Line
+	4750 3700 4750 3550
+Connection ~ 4750 3700
+Wire Wire Line
+	3500 3550 3500 3750
+Connection ~ 3500 3750
+Wire Wire Line
+	4100 4350 4100 4200
+Wire Wire Line
+	4100 4200 4750 4200
+Wire Wire Line
+	4750 3700 4750 4200
+Wire Wire Line
+	4200 3050 4200 2850
+Wire Wire Line
+	4200 2850 4100 2850
+Wire Wire Line
+	4100 2850 4100 3050
+Wire Wire Line
+	3500 3050 4100 3050
+Connection ~ 4100 3050
+Wire Wire Line
+	4100 3050 4200 3050
+Connection ~ 4200 3050
+Wire Wire Line
+	4200 3050 4750 3050
+Wire Wire Line
+	4750 3050 4750 2950
+Wire Wire Line
+	4750 2950 4850 2950
+Wire Wire Line
+	4850 2950 4850 3050
+Connection ~ 4750 3050
+Wire Wire Line
+	4750 3050 4850 3050
+Connection ~ 4850 3050
+Wire Wire Line
+	4850 3050 5250 3050
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5BFCB186
+P 2550 3950
+F 0 "V1" H 2778 3996 50  0000 L CNN
+F 1 "VSOURCE" H 2778 3905 50  0000 L CNN
+F 2 "" H 2550 3950 50  0001 C CNN
+F 3 "" H 2550 3950 50  0001 C CNN
+	1    2550 3950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

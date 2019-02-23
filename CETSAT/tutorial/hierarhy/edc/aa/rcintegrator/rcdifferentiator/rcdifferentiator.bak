@@ -1,0 +1,58 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 5BFA6B4A
+P 6050 4000
+F 0 "C?" H 6165 4046 50  0000 L CNN
+F 1 "5600nF" H 6165 3955 50  0000 L CNN
+F 2 "" H 6088 3850 50  0001 C CNN
+F 3 "~" H 6050 4000 50  0001 C CNN
+	1    6050 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BFA6BB1
+P 5400 3600
+F 0 "R?" V 5193 3600 50  0000 C CNN
+F 1 "5.6k" V 5284 3600 50  0000 C CNN
+F 2 "" V 5330 3600 50  0001 C CNN
+F 3 "~" H 5400 3600 50  0001 C CNN
+	1    5400 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 3600 6050 3600
+Wire Wire Line
+	6050 3850 6050 3600
+Connection ~ 6050 3600
+Wire Wire Line
+	6050 3600 6500 3600
+Wire Wire Line
+	6050 4150 6050 4450
+Wire Wire Line
+	6500 4450 6050 4450
+Connection ~ 6050 4450
+Wire Wire Line
+	5250 3600 4850 3600
+Wire Wire Line
+	4850 3600 4850 3900
+Wire Wire Line
+	4850 4450 4850 4150
+Wire Wire Line
+	4850 4450 6050 4450
+$EndSCHEMATC

@@ -1,0 +1,80 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:C C
+U 1 1 5BF964FF
+P 5250 2600
+F 0 "C" V 5565 2600 50  0000 C CNN
+F 1 "10u" V 5474 2600 50  0000 C CNN
+F 2 "" H 5250 2600 50  0001 C CNN
+F 3 "~" H 5250 2600 50  0001 C CNN
+	1    5250 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:R R
+U 1 1 5BF96644
+P 6800 3450
+F 0 "R" H 6868 3496 50  0000 L CNN
+F 1 "1k" H 6868 3405 50  0000 L CNN
+F 2 "" H 6800 3450 50  0001 C CNN
+F 3 "~" H 6800 3450 50  0001 C CNN
+	1    6800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V
+U 1 1 5BF96788
+P 4000 3500
+F 0 "V" H 4228 3546 50  0000 L CNN
+F 1 "VSOURCE" H 4228 3455 50  0000 L CNN
+F 2 "" H 4000 3500 50  0001 C CNN
+F 3 "~" H 4000 3500 50  0001 C CNN
+F 4 "V" H 4000 3500 50  0001 C CNN "Spice_Primitive"
+F 5 "pulse(0 5 10m 1u 1u 10m 20m)" H 4000 3500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4000 3500 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND01
+U 1 1 5BF9687F
+P 6800 4400
+F 0 "#GND01" H 6800 4300 50  0001 C CNN
+F 1 "0" H 6800 4487 50  0000 C CNN
+F 2 "" H 6800 4400 50  0001 C CNN
+F 3 "~" H 6800 4400 50  0001 C CNN
+	1    6800 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3200 6800 2600
+Wire Wire Line
+	6800 2600 5500 2600
+Wire Wire Line
+	4000 3200 4000 2600
+Wire Wire Line
+	4000 2600 5000 2600
+Wire Wire Line
+	6800 3700 6800 4100
+Wire Wire Line
+	4000 3800 4000 4100
+Wire Wire Line
+	4000 4100 6800 4100
+Connection ~ 6800 4100
+Wire Wire Line
+	6800 4100 6800 4400
+$EndSCHEMATC

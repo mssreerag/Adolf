@@ -1,0 +1,268 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:R R4
+U 1 1 5BFAE300
+P 3400 4000
+F 0 "R4" H 3468 4046 50  0000 L CNN
+F 1 "R" H 3468 3955 50  0000 L CNN
+F 2 "" H 3400 4000 50  0001 C CNN
+F 3 "~" H 3400 4000 50  0001 C CNN
+	1    3400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R2
+U 1 1 5BFAE345
+P 2750 4000
+F 0 "R2" H 2818 4046 50  0000 L CNN
+F 1 "R" H 2818 3955 50  0000 L CNN
+F 2 "" H 2750 4000 50  0001 C CNN
+F 3 "~" H 2750 4000 50  0001 C CNN
+	1    2750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R5
+U 1 1 5BFAE3EE
+P 4900 4000
+F 0 "R5" H 4968 4046 50  0000 L CNN
+F 1 "R" H 4968 3955 50  0000 L CNN
+F 2 "" H 4900 4000 50  0001 C CNN
+F 3 "~" H 4900 4000 50  0001 C CNN
+	1    4900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R3
+U 1 1 5BFAE465
+P 3400 2350
+F 0 "R3" H 3468 2396 50  0000 L CNN
+F 1 "R" H 3468 2305 50  0000 L CNN
+F 2 "" H 3400 2350 50  0001 C CNN
+F 3 "~" H 3400 2350 50  0001 C CNN
+	1    3400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R1
+U 1 1 5BFAE4EC
+P 2750 2350
+F 0 "R1" H 2818 2396 50  0000 L CNN
+F 1 "R" H 2818 2305 50  0000 L CNN
+F 2 "" H 2750 2350 50  0001 C CNN
+F 3 "~" H 2750 2350 50  0001 C CNN
+	1    2750 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C5
+U 1 1 5BFAE54C
+P 6250 2850
+F 0 "C5" V 5935 2850 50  0000 C CNN
+F 1 "C" V 6026 2850 50  0000 C CNN
+F 2 "" H 6250 2850 50  0001 C CNN
+F 3 "~" H 6250 2850 50  0001 C CNN
+	1    6250 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:C C3
+U 1 1 5BFAE595
+P 4400 2850
+F 0 "C3" V 4085 2850 50  0000 C CNN
+F 1 "C" V 4176 2850 50  0000 C CNN
+F 2 "" H 4400 2850 50  0001 C CNN
+F 3 "~" H 4400 2850 50  0001 C CNN
+	1    4400 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:C C4
+U 1 1 5BFAE612
+P 5400 2850
+F 0 "C4" V 5085 2850 50  0000 C CNN
+F 1 "C" V 5176 2850 50  0000 C CNN
+F 2 "" H 5400 2850 50  0001 C CNN
+F 3 "~" H 5400 2850 50  0001 C CNN
+	1    5400 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:C C2
+U 1 1 5BFAE68B
+P 4400 2250
+F 0 "C2" V 4715 2250 50  0000 C CNN
+F 1 "C" V 4624 2250 50  0000 C CNN
+F 2 "" H 4400 2250 50  0001 C CNN
+F 3 "~" H 4400 2250 50  0001 C CNN
+	1    4400 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:C C1
+U 1 1 5BFAE6DC
+P 3900 4000
+F 0 "C1" H 4078 4046 50  0000 L CNN
+F 1 "C" H 4078 3955 50  0000 L CNN
+F 2 "" H 3900 4000 50  0001 C CNN
+F 3 "~" H 3900 4000 50  0001 C CNN
+	1    3900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:QNPN Q1
+U 1 1 5BFAE83E
+P 3250 3250
+F 0 "Q1" H 3477 3296 50  0000 L CNN
+F 1 "QNPN" H 3477 3205 50  0000 L CNN
+F 2 "" H 3250 3250 50  0001 C CNN
+F 3 "~" H 3250 3250 50  0001 C CNN
+	1    3250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R6
+U 1 1 5BFAF1FE
+P 5850 4000
+F 0 "R6" H 5918 4046 50  0000 L CNN
+F 1 "R" H 5918 3955 50  0000 L CNN
+F 2 "" H 5850 4000 50  0001 C CNN
+F 3 "~" H 5850 4000 50  0001 C CNN
+	1    5850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND01
+U 1 1 5BFAF261
+P 4400 4600
+F 0 "#GND01" H 4400 4500 50  0001 C CNN
+F 1 "0" H 4400 4700 50  0000 C CNN
+F 2 "" H 4400 4600 50  0001 C CNN
+F 3 "~" H 4400 4600 50  0001 C CNN
+	1    4400 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2600 3400 2850
+Wire Wire Line
+	3400 2100 3100 2100
+Wire Wire Line
+	2750 2600 2750 3750
+Connection ~ 3400 2900
+Wire Wire Line
+	3400 2900 3400 3000
+Wire Wire Line
+	4150 2850 3950 2850
+Connection ~ 3400 2850
+Wire Wire Line
+	3400 2850 3400 2900
+Wire Wire Line
+	4650 2850 4900 2850
+Wire Wire Line
+	5650 2850 5850 2850
+Wire Wire Line
+	4150 2250 3950 2250
+Wire Wire Line
+	3950 2250 3950 2850
+Connection ~ 3950 2850
+Wire Wire Line
+	3950 2850 3400 2850
+Wire Wire Line
+	4650 2250 5100 2250
+Connection ~ 4900 2850
+Wire Wire Line
+	4900 2850 5150 2850
+Connection ~ 5850 2850
+Wire Wire Line
+	5850 2850 6000 2850
+Wire Wire Line
+	4900 2850 4900 3750
+Wire Wire Line
+	5850 2850 5850 3750
+Wire Wire Line
+	2750 4250 2750 4350
+Wire Wire Line
+	2750 4350 3400 4350
+Wire Wire Line
+	5850 4350 5850 4250
+Wire Wire Line
+	4900 4250 4900 4350
+Connection ~ 4900 4350
+Wire Wire Line
+	4900 4350 5850 4350
+Wire Wire Line
+	3400 4250 3400 4350
+Connection ~ 3400 4350
+Wire Wire Line
+	3400 4350 3900 4350
+Wire Wire Line
+	3900 4250 3900 4350
+Connection ~ 3900 4350
+Wire Wire Line
+	3900 4350 4400 4350
+Wire Wire Line
+	4400 4350 4400 4600
+Connection ~ 4400 4350
+Wire Wire Line
+	4400 4350 4900 4350
+Wire Wire Line
+	3400 3600 3400 3700
+Wire Wire Line
+	3400 3700 3900 3700
+Wire Wire Line
+	3900 3700 3900 3750
+Connection ~ 3400 3700
+Wire Wire Line
+	3400 3700 3400 3750
+Wire Wire Line
+	2950 3250 2350 3250
+Wire Wire Line
+	2350 3250 2350 4950
+Wire Wire Line
+	2350 4950 6500 4950
+Wire Wire Line
+	6500 4950 6500 4000
+$Comp
+L Device:R_Variable R7
+U 1 1 5BFB2CEC
+P 6500 3850
+F 0 "R7" H 6628 3896 50  0000 L CNN
+F 1 "R_Variable" H 6628 3805 50  0000 L CNN
+F 2 "" V 6430 3850 50  0001 C CNN
+F 3 "~" H 6500 3850 50  0001 C CNN
+	1    6500 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3700 6500 2850
+$Comp
+L power:+VDC #PWR01
+U 1 1 5BFB2DB7
+P 3100 2000
+F 0 "#PWR01" H 3100 1900 50  0001 C CNN
+F 1 "+VDC" H 3100 2275 50  0000 C CNN
+F 2 "" H 3100 2000 50  0001 C CNN
+F 3 "" H 3100 2000 50  0001 C CNN
+	1    3100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2000 3100 2100
+Connection ~ 3100 2100
+Wire Wire Line
+	3100 2100 2750 2100
+$EndSCHEMATC

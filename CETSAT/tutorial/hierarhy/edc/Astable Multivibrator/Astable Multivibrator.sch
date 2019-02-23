@@ -1,0 +1,207 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:C C1
+U 1 1 5BF98201
+P 5550 3500
+F 0 "C1" V 5235 3500 50  0000 C CNN
+F 1 "0.01u" V 5326 3500 50  0000 C CNN
+F 2 "" H 5550 3500 50  0001 C CNN
+F 3 "~" H 5550 3500 50  0001 C CNN
+	1    5550 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:C C2
+U 1 1 5BF982CC
+P 8150 3500
+F 0 "C2" V 7835 3500 50  0000 C CNN
+F 1 "0.022u" V 7926 3500 50  0000 C CNN
+F 2 "" H 8150 3500 50  0001 C CNN
+F 3 "~" H 8150 3500 50  0001 C CNN
+	1    8150 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:R R1
+U 1 1 5BF983F7
+P 4900 2650
+F 0 "R1" H 4968 2696 50  0000 L CNN
+F 1 "4.7k" H 4968 2605 50  0000 L CNN
+F 2 "" H 4900 2650 50  0001 C CNN
+F 3 "~" H 4900 2650 50  0001 C CNN
+	1    4900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R2
+U 1 1 5BF98448
+P 6200 2650
+F 0 "R2" H 6268 2696 50  0000 L CNN
+F 1 "82k" H 6268 2605 50  0000 L CNN
+F 2 "" H 6200 2650 50  0001 C CNN
+F 3 "~" H 6200 2650 50  0001 C CNN
+	1    6200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R3
+U 1 1 5BF984CD
+P 7500 2650
+F 0 "R3" H 7568 2696 50  0000 L CNN
+F 1 "82k" H 7568 2605 50  0000 L CNN
+F 2 "" H 7500 2650 50  0001 C CNN
+F 3 "~" H 7500 2650 50  0001 C CNN
+	1    7500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R4
+U 1 1 5BF98564
+P 8800 2650
+F 0 "R4" H 8868 2696 50  0000 L CNN
+F 1 "4.7k" H 8868 2605 50  0000 L CNN
+F 2 "" H 8800 2650 50  0001 C CNN
+F 3 "~" H 8800 2650 50  0001 C CNN
+	1    8800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:QNPN Q1
+U 1 1 5BF985FE
+P 5050 4550
+F 0 "Q1" H 5276 4596 50  0000 L CNN
+F 1 "QNPN" H 5276 4505 50  0000 L CNN
+F 2 "" H 5050 4550 50  0001 C CNN
+F 3 "~" H 5050 4550 50  0001 C CNN
+	1    5050 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L pspice:QNPN Q2
+U 1 1 5BF9865F
+P 8650 4550
+F 0 "Q2" H 8877 4596 50  0000 L CNN
+F 1 "QNPN" H 8877 4505 50  0000 L CNN
+F 2 "" H 8650 4550 50  0001 C CNN
+F 3 "~" H 8650 4550 50  0001 C CNN
+	1    8650 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5BF986D5
+P 3300 3700
+F 0 "V1" H 3528 3746 50  0000 L CNN
+F 1 "VSOURCE" H 3528 3655 50  0000 L CNN
+F 2 "" H 3300 3700 50  0001 C CNN
+F 3 "~" H 3300 3700 50  0001 C CNN
+	1    3300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2900 4900 3500
+Wire Wire Line
+	4900 2400 4900 1900
+Wire Wire Line
+	4900 1900 6200 1900
+Wire Wire Line
+	8800 1900 8800 2400
+Wire Wire Line
+	6200 2400 6200 1900
+Connection ~ 6200 1900
+Wire Wire Line
+	6200 1900 7500 1900
+Wire Wire Line
+	7500 2400 7500 1900
+Connection ~ 7500 1900
+Wire Wire Line
+	7500 1900 8800 1900
+Wire Wire Line
+	7500 2900 7500 3500
+Wire Wire Line
+	7500 3500 7900 3500
+Wire Wire Line
+	8800 2900 8800 3500
+Wire Wire Line
+	8800 3500 8400 3500
+Wire Wire Line
+	5800 3500 6200 3500
+Wire Wire Line
+	6200 3500 6200 2900
+Wire Wire Line
+	5300 3500 4900 3500
+Connection ~ 4900 3500
+Wire Wire Line
+	4900 3500 4900 4200
+Wire Wire Line
+	5350 4550 6900 4550
+Wire Wire Line
+	6900 4550 6900 3500
+Wire Wire Line
+	6900 3500 7500 3500
+Connection ~ 7500 3500
+Wire Wire Line
+	6200 3500 6800 3500
+Wire Wire Line
+	6800 3500 6800 4200
+Wire Wire Line
+	6800 4200 7000 4200
+Wire Wire Line
+	7000 4200 7000 4550
+Connection ~ 6200 3500
+Wire Wire Line
+	4900 4900 4900 5600
+Wire Wire Line
+	4900 5600 6900 5600
+Wire Wire Line
+	8800 5600 8800 4900
+Wire Wire Line
+	8800 4200 8800 3500
+Connection ~ 8800 3500
+Wire Wire Line
+	3300 3400 3300 1900
+Wire Wire Line
+	3300 1900 4900 1900
+Connection ~ 4900 1900
+Wire Wire Line
+	3300 4000 3300 5600
+Wire Wire Line
+	3300 5600 4900 5600
+Connection ~ 4900 5600
+NoConn ~ 8550 4900
+$Comp
+L pspice:0 #GND01
+U 1 1 5BF9AA0F
+P 6900 6000
+F 0 "#GND01" H 6900 5900 50  0001 C CNN
+F 1 "0" H 6900 6087 50  0000 C CNN
+F 2 "" H 6900 6000 50  0001 C CNN
+F 3 "~" H 6900 6000 50  0001 C CNN
+	1    6900 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 5600 6900 6000
+Connection ~ 6900 5600
+Wire Wire Line
+	6900 5600 8800 5600
+Wire Wire Line
+	5150 4900 5150 4850
+NoConn ~ 5150 4900
+Wire Wire Line
+	7000 4550 8350 4550
+$EndSCHEMATC

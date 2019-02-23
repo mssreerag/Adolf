@@ -1,0 +1,203 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5BFA9A1A
+P 2450 3550
+F 0 "R1" H 2520 3596 50  0000 L CNN
+F 1 "4.7k" H 2520 3505 50  0000 L CNN
+F 2 "" V 2380 3550 50  0001 C CNN
+F 3 "~" H 2450 3550 50  0001 C CNN
+	1    2450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BFA9A8F
+P 3050 3550
+F 0 "R2" H 3120 3596 50  0000 L CNN
+F 1 "82k" H 3120 3505 50  0000 L CNN
+F 2 "" V 2980 3550 50  0001 C CNN
+F 3 "~" H 3050 3550 50  0001 C CNN
+	1    3050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BFA9B02
+P 3700 3550
+F 0 "R3" H 3770 3596 50  0000 L CNN
+F 1 "82k" H 3770 3505 50  0000 L CNN
+F 2 "" V 3630 3550 50  0001 C CNN
+F 3 "~" H 3700 3550 50  0001 C CNN
+	1    3700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5BFA9B45
+P 4200 3550
+F 0 "R4" H 4270 3596 50  0000 L CNN
+F 1 "4.7k" H 4270 3505 50  0000 L CNN
+F 2 "" V 4130 3550 50  0001 C CNN
+F 3 "~" H 4200 3550 50  0001 C CNN
+	1    4200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5BFA9B80
+P 2750 4000
+F 0 "C1" V 2498 4000 50  0000 C CNN
+F 1 "0.01u" V 2589 4000 50  0000 C CNN
+F 2 "" H 2788 3850 50  0001 C CNN
+F 3 "~" H 2750 4000 50  0001 C CNN
+	1    2750 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5BFA9C23
+P 3950 4000
+F 0 "C2" V 3698 4000 50  0000 C CNN
+F 1 "0.022u" V 3789 4000 50  0000 C CNN
+F 2 "" H 3988 3850 50  0001 C CNN
+F 3 "~" H 3950 4000 50  0001 C CNN
+	1    3950 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 3700 2450 4000
+Wire Wire Line
+	2600 4000 2450 4000
+Wire Wire Line
+	2450 3400 2450 3250
+Wire Wire Line
+	4200 3250 4200 3400
+Wire Wire Line
+	3700 3250 3700 3400
+Connection ~ 3700 3250
+Wire Wire Line
+	3700 3250 4200 3250
+Wire Wire Line
+	3050 3400 3050 3250
+Connection ~ 3050 3250
+Wire Wire Line
+	3050 3250 3700 3250
+Wire Wire Line
+	2900 4000 3050 4000
+Wire Wire Line
+	3050 4000 3050 3700
+Wire Wire Line
+	3700 3700 3700 4000
+Wire Wire Line
+	3700 4000 3800 4000
+Wire Wire Line
+	4100 4000 4200 4000
+Wire Wire Line
+	4200 4000 4200 3700
+Wire Wire Line
+	3050 4350 3700 4350
+Wire Wire Line
+	3700 4350 3700 4000
+Connection ~ 3700 4000
+Wire Wire Line
+	3750 4300 3050 4300
+Wire Wire Line
+	3050 4300 3050 4000
+Connection ~ 3050 4000
+Wire Wire Line
+	3400 5050 3400 5150
+Connection ~ 3400 5050
+Wire Wire Line
+	3400 5050 4200 5050
+$Comp
+L pspice:0 #GND01
+U 1 1 5BFAB5E6
+P 3400 5150
+F 0 "#GND01" H 3400 5050 50  0001 C CNN
+F 1 "0" H 3400 5237 50  0000 C CNN
+F 2 "" H 3400 5150 50  0001 C CNN
+F 3 "" H 3400 5150 50  0001 C CNN
+	1    3400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5BFAB67B
+P 1500 4150
+F 0 "V1" H 1728 4196 50  0000 L CNN
+F 1 "9V" H 1728 4105 50  0000 L CNN
+F 2 "" H 1500 4150 50  0001 C CNN
+F 3 "" H 1500 4150 50  0001 C CNN
+	1    1500 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5050 1500 4450
+Wire Wire Line
+	1500 3850 1500 3250
+Wire Wire Line
+	1500 3250 2450 3250
+Connection ~ 2450 3250
+Wire Wire Line
+	2450 3250 3050 3250
+$Comp
+L pspice:QNPN Q2
+U 1 1 5BFACC28
+P 4050 4550
+F 0 "Q2" H 4277 4596 50  0000 L CNN
+F 1 "QNPN" H 4277 4505 50  0000 L CNN
+F 2 "" H 4050 4550 50  0001 C CNN
+F 3 "" H 4050 4550 50  0001 C CNN
+	1    4050 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4550 3750 4300
+Wire Wire Line
+	4200 4200 4200 4000
+Connection ~ 4200 4000
+Wire Wire Line
+	4200 5050 4200 4900
+$Comp
+L pspice:QNPN Q1
+U 1 1 5BFAEB84
+P 2600 4550
+F 0 "Q1" H 2826 4596 50  0000 L CNN
+F 1 "QNPN" H 2826 4505 50  0000 L CNN
+F 2 "" H 2600 4550 50  0001 C CNN
+F 3 "" H 2600 4550 50  0001 C CNN
+	1    2600 4550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5050 2450 5050
+Wire Wire Line
+	2900 4550 3050 4550
+Wire Wire Line
+	3050 4350 3050 4550
+Wire Wire Line
+	2450 4000 2450 4200
+Connection ~ 2450 4000
+Wire Wire Line
+	2450 4900 2450 5050
+Connection ~ 2450 5050
+Wire Wire Line
+	2450 5050 3400 5050
+NoConn ~ 3950 4900
+NoConn ~ 2700 4900
+$EndSCHEMATC

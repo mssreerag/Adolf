@@ -1,0 +1,125 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM741 U1
+U 1 1 5BFA78A0
+P 4550 3100
+F 0 "U1" H 4891 3146 50  0000 L CNN
+F 1 "LM741" H 4891 3055 50  0000 L CNN
+F 2 "" H 4600 3150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 4700 3250 50  0001 C CNN
+	1    4550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BFA792C
+P 4450 2300
+F 0 "R3" V 4243 2300 50  0000 C CNN
+F 1 "5k" V 4334 2300 50  0000 C CNN
+F 2 "" V 4380 2300 50  0001 C CNN
+F 3 "~" H 4450 2300 50  0001 C CNN
+	1    4450 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BFA798C
+P 3650 3000
+F 0 "R1" V 3443 3000 50  0000 C CNN
+F 1 "1k" V 3534 3000 50  0000 C CNN
+F 2 "" V 3580 3000 50  0001 C CNN
+F 3 "~" H 3650 3000 50  0001 C CNN
+	1    3650 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BFA79DB
+P 4050 3600
+F 0 "R2" H 4120 3646 50  0000 L CNN
+F 1 ".833k" H 4120 3555 50  0000 L CNN
+F 2 "" V 3980 3600 50  0001 C CNN
+F 3 "~" H 4050 3600 50  0001 C CNN
+	1    4050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3200 4050 3200
+Wire Wire Line
+	4050 3200 4050 3450
+Wire Wire Line
+	3500 3000 3450 3000
+Wire Wire Line
+	3450 3000 3450 3200
+$Comp
+L Device:Battery BT1
+U 1 1 5BFA866E
+P 3450 3400
+F 0 "BT1" H 3558 3446 50  0000 L CNN
+F 1 "Battery" H 3558 3355 50  0000 L CNN
+F 2 "" V 3450 3460 50  0001 C CNN
+F 3 "~" V 3450 3460 50  0001 C CNN
+	1    3450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR01
+U 1 1 5BFA86CC
+P 3450 3600
+F 0 "#PWR01" H 3450 3350 50  0001 C CNN
+F 1 "Earth" H 3450 3450 50  0001 C CNN
+F 2 "" H 3450 3600 50  0001 C CNN
+F 3 "~" H 3450 3600 50  0001 C CNN
+	1    3450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3000 4000 3000
+$Comp
+L power:Earth #PWR02
+U 1 1 5BFA8825
+P 4050 3750
+F 0 "#PWR02" H 4050 3500 50  0001 C CNN
+F 1 "Earth" H 4050 3600 50  0001 C CNN
+F 2 "" H 4050 3750 50  0001 C CNN
+F 3 "~" H 4050 3750 50  0001 C CNN
+	1    4050 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3100 5050 3100
+Wire Wire Line
+	4000 3000 4000 2300
+Wire Wire Line
+	4000 2300 4300 2300
+Connection ~ 4000 3000
+Wire Wire Line
+	4000 3000 3800 3000
+Wire Wire Line
+	4600 2300 5050 2300
+Wire Wire Line
+	5050 2300 5050 3100
+Connection ~ 5050 3100
+Wire Wire Line
+	5050 3100 5850 3100
+Wire Wire Line
+	4450 3400 4450 3500
+Wire Wire Line
+	4450 3500 4600 3500
+Wire Wire Line
+	4450 2800 4600 2800
+$EndSCHEMATC

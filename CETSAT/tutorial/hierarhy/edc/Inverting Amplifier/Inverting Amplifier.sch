@@ -1,0 +1,175 @@
+EESchema Schematic File Version 4
+LIBS:Inverting Amplifier-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:R R2
+U 1 1 5BF9F38E
+P 5150 3100
+F 0 "R2" V 4945 3100 50  0000 C CNN
+F 1 "5k" V 5036 3100 50  0000 C CNN
+F 2 "" H 5150 3100 50  0001 C CNN
+F 3 "~" H 5150 3100 50  0001 C CNN
+	1    5150 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:R R3
+U 1 1 5BF9F3E9
+P 5200 4750
+F 0 "R3" H 5268 4796 50  0000 L CNN
+F 1 "833" H 5268 4705 50  0000 L CNN
+F 2 "" H 5200 4750 50  0001 C CNN
+F 3 "~" H 5200 4750 50  0001 C CNN
+	1    5200 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R1
+U 1 1 5BF9F430
+P 4350 3700
+F 0 "R1" V 4145 3700 50  0000 C CNN
+F 1 "1k" V 4236 3700 50  0000 C CNN
+F 2 "" H 4350 3700 50  0001 C CNN
+F 3 "~" H 4350 3700 50  0001 C CNN
+	1    4350 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:0 #GND02
+U 1 1 5BF9F5B2
+P 4700 5400
+F 0 "#GND02" H 4700 5300 50  0001 C CNN
+F 1 "0" H 4700 5487 50  0000 C CNN
+F 2 "" H 4700 5400 50  0001 C CNN
+F 3 "~" H 4700 5400 50  0001 C CNN
+	1    4700 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3800 6500 3800
+Wire Wire Line
+	6500 3100 6500 3800
+Wire Wire Line
+	5400 3100 6500 3100
+Connection ~ 6500 3800
+Wire Wire Line
+	6500 3800 6550 3800
+Wire Wire Line
+	4600 3700 4800 3700
+Wire Wire Line
+	4900 3100 4800 3100
+Wire Wire Line
+	4800 3100 4800 3700
+Connection ~ 4800 3700
+Wire Wire Line
+	4800 3700 5500 3700
+Wire Wire Line
+	5200 4500 5200 3900
+Wire Wire Line
+	5200 3900 5500 3900
+Wire Wire Line
+	5200 5000 5200 5150
+Wire Wire Line
+	4100 3700 3900 3700
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5BF9FBBE
+P 3900 4650
+F 0 "V1" H 4128 4696 50  0000 L CNN
+F 1 "VSOURCE" H 4128 4605 50  0000 L CNN
+F 2 "" H 3900 4650 50  0001 C CNN
+F 3 "~" H 3900 4650 50  0001 C CNN
+F 4 "V" H 3900 4650 50  0001 C CNN "Spice_Primitive"
+F 5 "sin(0 5 50 0)" H 3900 4650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3900 4650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3900 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:OPAMP U1
+U 1 1 5BFAE319
+P 5800 3800
+F 0 "U1" H 5800 3322 50  0000 C CNN
+F 1 "OPAMP" H 5800 3413 50  0000 C CNN
+F 2 "" H 5800 3800 50  0001 C CNN
+F 3 "~" H 5800 3800 50  0001 C CNN
+	1    5800 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L pspice:VSOURCE V2
+U 1 1 5BFAE389
+P 7700 3200
+F 0 "V2" H 7928 3246 50  0000 L CNN
+F 1 "+15v" H 7928 3155 50  0000 L CNN
+F 2 "" H 7700 3200 50  0001 C CNN
+F 3 "~" H 7700 3200 50  0001 C CNN
+	1    7700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V3
+U 1 1 5BFAE3CA
+P 7700 4850
+F 0 "V3" H 7928 4896 50  0000 L CNN
+F 1 "-15v" H 7928 4805 50  0000 L CNN
+F 2 "" H 7700 4850 50  0001 C CNN
+F 3 "~" H 7700 4850 50  0001 C CNN
+	1    7700 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3500 5700 2650
+Wire Wire Line
+	5700 2650 7700 2650
+Wire Wire Line
+	7700 2650 7700 2900
+Wire Wire Line
+	7700 3500 7700 4150
+Wire Wire Line
+	7700 4150 6600 4150
+Wire Wire Line
+	6600 4150 6600 5150
+Wire Wire Line
+	6600 5150 6450 5150
+Connection ~ 5200 5150
+Wire Wire Line
+	3900 3700 3900 4350
+Wire Wire Line
+	3900 4950 3900 5150
+Wire Wire Line
+	3900 5150 4700 5150
+Wire Wire Line
+	7700 5150 7700 5250
+Wire Wire Line
+	7700 5250 6450 5250
+Wire Wire Line
+	6450 5250 6450 5150
+Connection ~ 6450 5150
+Wire Wire Line
+	6450 5150 5200 5150
+Wire Wire Line
+	5700 4100 5700 4350
+Wire Wire Line
+	5700 4350 7700 4350
+Wire Wire Line
+	7700 4350 7700 4550
+Wire Wire Line
+	4700 5150 4700 5400
+Connection ~ 4700 5150
+Wire Wire Line
+	4700 5150 5200 5150
+$EndSCHEMATC

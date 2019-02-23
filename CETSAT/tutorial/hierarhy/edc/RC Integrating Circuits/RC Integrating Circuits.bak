@@ -1,0 +1,81 @@
+EESchema Schematic File Version 4
+LIBS:RC Integrating Circuits-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:C C
+U 1 1 5BF9618C
+P 8900 3550
+F 0 "C" H 9078 3596 50  0000 L CNN
+F 1 "10u" H 9078 3505 50  0000 L CNN
+F 2 "" H 8900 3550 50  0001 C CNN
+F 3 "~" H 8900 3550 50  0001 C CNN
+	1    8900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R
+U 1 1 5BF963CB
+P 7450 2800
+F 0 "R" V 7245 2800 50  0000 C CNN
+F 1 "1k" V 7336 2800 50  0000 C CNN
+F 2 "" H 7450 2800 50  0001 C CNN
+F 3 "~" H 7450 2800 50  0001 C CNN
+	1    7450 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5BF9656D
+P 5900 3500
+F 0 "V1" H 6128 3546 50  0000 L CNN
+F 1 "VSOURCE" H 6128 3455 50  0000 L CNN
+F 2 "" H 5900 3500 50  0001 C CNN
+F 3 "~" H 5900 3500 50  0001 C CNN
+F 4 "V" H 5900 3500 50  0001 C CNN "Spice_Primitive"
+F 5 "pulse(0 5 10m 1u 1u 1m 2m)" H 5900 3500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5900 3500 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND01
+U 1 1 5BF96600
+P 8900 4400
+F 0 "#GND01" H 8900 4300 50  0001 C CNN
+F 1 "0" H 8900 4487 50  0000 C CNN
+F 2 "" H 8900 4400 50  0001 C CNN
+F 3 "~" H 8900 4400 50  0001 C CNN
+	1    8900 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3200 5900 2800
+Wire Wire Line
+	5900 2800 7200 2800
+Wire Wire Line
+	7700 2800 8900 2800
+Wire Wire Line
+	8900 2800 8900 3300
+Wire Wire Line
+	8900 3800 8900 4150
+Wire Wire Line
+	5900 3800 5900 4150
+Wire Wire Line
+	5900 4150 8900 4150
+Connection ~ 8900 4150
+Wire Wire Line
+	8900 4150 8900 4400
+$EndSCHEMATC
